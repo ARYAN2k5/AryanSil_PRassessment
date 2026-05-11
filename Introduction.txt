@@ -1,0 +1,1 @@
+This solution contains a ROS2 system that allows TurtleBot3 to visually track and follow a green sphere in a Gazebo simulation. The robot uses a Proportional (P) controller to center the object in its field of view and move towards it.

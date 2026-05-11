@@ -1,0 +1,9 @@
+Proximity Detection and Stopping - 
+
+To prevent collisions and stop at a safe distance, we can use the following methods :-
+
+a) LIDAR: We subscribe to the "/scan" topic and monitor the distance at the 0 degrees index. If the range is smaller than or equal to 0.4m, we command the robot to stop.
+b) Visual Area: We monitor the pixel area. As the robot approaches, the pixel count increases. Stop is triggered when the area exceeds a particular threshold value.
+c) Depth Data: If using a RealSense camera, we sample the depth pixel at the object’s centroid to get the distance in meters directly.
+
+The best approach is Sensor Fusion by using a Camera to identify and center the target. LIDAR is used to handle distance measurement, as it is unaffected by lighting or object size.

@@ -1,0 +1,8 @@
+mkdir ~/ros2_ws_asil/src
+cd ~/ros2_ws_asil/src
+
+git clone https://github.com/ARYAN2k5/AryanSil_PRassessment.git
+
+cd ~/ros2_ws_asil
+colcon build
+source install/setup.bash

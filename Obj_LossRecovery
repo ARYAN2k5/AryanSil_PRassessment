@@ -1,0 +1,7 @@
+Handling Object Loss and Recovery - 
+
+When the target exits the camera's field of view, the robot loses its tracking signal. In order to recover the same, we use the following methods:-
+
+a) Directional Memory: Stores the sign of the last valid horizontal error. If the error was positive, the object exited left otherwise right.
+b) Search State: When no contours are detected, we set linear.x to 0 and apply a constant angular.z in "rad/s" in the direction of the last known position.
+c) Re-acquisition: The robot spins in place until the OpenCV mask detects the green color threshold again, triggering a transition back to the "Following" state.

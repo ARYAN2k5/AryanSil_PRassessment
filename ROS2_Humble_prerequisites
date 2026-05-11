@@ -1,0 +1,5 @@
+sudo apt update
+sudo apt install ros-humble-turtlebot3-gazebo \
+                 ros-humble-turtlebot3-bringup \
+                 ros-humble-turtlebot3-cv-bridge \
+                 python3-opencv
